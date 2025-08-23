@@ -1,4 +1,4 @@
-#include <vkit/renderer.hpp>
+#include <vkit/application.hpp>
 
 #include <iostream>
 
