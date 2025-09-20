@@ -1,6 +1,6 @@
-#include <vkit/application.hpp>
+#include <frank/application.hpp>
 
-std::string vkit::hello_world()
+std::string frank::hello_world()
 {
 	return "Hello World";
 }

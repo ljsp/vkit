@@ -7,7 +7,7 @@
 #include <glm/glm.hpp>
 #include <imgui.h>
 
-namespace vkit 
+namespace frank 
 {
 	std::string hello_world();
 }  // namespace vkit

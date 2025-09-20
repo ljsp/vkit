@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.14...3.22)
 # ---- Project ----
 
 # Note: update this to your new project's name and version
-project(VKit VERSION 1.0 LANGUAGES CXX)
+project(Frank VERSION 1.0 LANGUAGES CXX)
 
 # ---- Include guards ----
 
@@ -93,16 +93,16 @@ file(GLOB_RECURSE sources CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.c
 
 # Note: for header-only libraries change all PUBLIC flags to INTERFACE and create an interface
 # target: add_library(${PROJECT_NAME} INTERFACE)
-add_library(VKit ${headers} ${sources})
-set_target_properties(VKit PROPERTIES CXX_STANDARD 20)
+add_library(Frank ${headers} ${sources})
+set_target_properties(Frank PROPERTIES CXX_STANDARD 20)
 
 # being a cross-platform target, we enforce standards conformance on MSVC
-target_compile_options(VKit PUBLIC "$<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/permissive->")
+target_compile_options(Frank PUBLIC "$<$<COMPILE_LANG_AND_ID:CXX,MSVC>:/permissive->")
 
 # Link dependencies
-target_link_libraries(VKit PRIVATE assimp bgfx glfw imgui)
+target_link_libraries(Frank PRIVATE assimp bgfx glfw imgui)
 
-target_include_directories(VKit PUBLIC
+target_include_directories(Frank PUBLIC
   $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
   $<BUILD_INTERFACE:${glm_SOURCE_DIR}>
   # $<BUILD_INTERFACE:${imgui_SOURCE_DIR}/src>

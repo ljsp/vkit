@@ -10,7 +10,7 @@ include(../cmake/tools.cmake)
 
 include(../cmake/CPM.cmake)
 
-CPMAddPackage(NAME VKit SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/..)
+CPMAddPackage(NAME Frank SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/..)
 
 # ---- Create standalone executable ----
 
@@ -20,4 +20,4 @@ add_executable(Viewer ${sources})
 
 set_target_properties(Viewer PROPERTIES CXX_STANDARD 20 OUTPUT_NAME "Viewer")
 
-target_link_libraries(Viewer VKit::VKit)
+target_link_libraries(Viewer Frank::Frank)

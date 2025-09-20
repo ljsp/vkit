@@ -1,9 +1,9 @@
-#include <vkit/application.hpp>
+#include <frank/application.hpp>
 
 #include <iostream>
 
 int main(int argc, char** argv)  
 {
-  std::cout << vkit::hello_world() << std::endl;
+  std::cout << frank::hello_world() << std::endl;
   return 0;
 }

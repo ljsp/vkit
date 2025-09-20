@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-namespace vkit
+namespace frank
 {
 	std::string hello_world();
 }  // namespace vkit
